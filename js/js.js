@@ -3394,10 +3394,10 @@ var iex = getInternetExplorerVersion();
 var ieTester = '';
 $(document).ready(function () {
     if ((iex < 10 && iex > 1)) {
-        ieTester = 'Update your browser!!<br/>';
+        ieTester = '更新您的浏览器!!<br/>';
         $('#loading span').html(ieTester);
     }
-    var pageContent = '<div id="lightboxBG"></div>' + '<div id="lightbox">' + '<span class="rosette"></span>' + '<div class="box">' + '<div class="content content1">' + '<div class="title"></div>' + '<div id="instructions"></div>' + '<span class="santa"></span>' + '<div class="play input">Play</div>' + '<ul class="nav">' + '<!--<li><a href="maito:hello@d2i.co">Contact us</a></li>-->' + '' + '</ul>' + '<div class="footer">' + '' + '' + '<span class="powered">' + '<span class="logo"></span>' + '</span>' + '</div>' + '</div>' + '<div class="content content2">' + '<div class="title"></div>' + '<div id="score-table">' + '<ul>' + '</ul>' + '</div>' + '<div id="score-button" class="input fb">Post Your Score</div>' + '<ul class="nav">' + '<li class="back">« Back</li>' + '<li class="play">Play again</li>' + '</ul>' + '<div class="footer">' + '' + '' + '' + '<span class="powered">' + '<span class="logo"></span>' + '</span>' + '</div>' + '</div>' + '</div>' + '</div>' + '<div id="video-message"></div>' + '<div id="container">' + '<div id="sky">' + '<div id="moon">' + '<div id="cloud"></div>' + '<div id="skyline"></div>' + '<div id="city"></div>' + '<div id="snow-b">' + '<div id="snow">' + '<div id="game-over"></div>' + '<div id="santa">' + '<span class="reindeer2"><span></span></span>' + '<span class="reindeer1"><span></span></span>' + '<span class="santa"></span>' + '<span class="santasweet"></span>' + '</div>' + '<div id="cloud-b"></div>' + '</div>' + '</div>' + '</div>' + '</div>' + '<div id="snow-frame"><span class="v">Created by</span></div>' + '<div id="controls">' + '<div id="keys">' + '<div id="up"><span></span></div>' + '<div id="down"><span></span></div>' + '<div id="left"><span></span></div>' + '<div id="right"><span></span></div>' + '</div>' + '<div id="counterText">Score</div>' + '<div id="counter"></div>' + '<div id="music"><span></span></div>' + '<div id="spacebar">Space</div>' + '</div>' + '<div id="imagelist"><img src="img/house5b.png" /><img src="img/house5.png" /><img src="img/house4.png" /><img src="img/house3.png" /><img src="img/house2.png" /><img src="img/house1.png" /><img src="img/gift1.png" /><img src="img/gift2.png" /><img src="img/gift3.png" /><img src="img/gift4.png" /><img src="img/gift5.png" /><img src="img/enemy1.png" /><img src="img/enemy2.png" /><img src="img/enemy3.png" /><img src="img/enemy4.png" /><img src="img/santa1.png" /><img src="img/santa2.png" /><img src="img/santa3.png" /><img src="img/loading.gif" /><img src="img/logolight-b.png" /><img src="img/logolight.png" /></div>' + '</div>'
+    var pageContent = '<div id="lightboxBG"></div>' + '<div id="lightbox">' + '<span class="rosette"></span>' + '<div class="box">' + '<div class="content content1">' + '<div class="title"></div>' + '<div id="instructions"></div>' + '<span class="santa"></span>' + '<div class="play input">开始</div>' + '<ul class="nav">' + '<!--<li><a href="maito:hello@d2i.co">Contact us</a></li>-->' + '' + '</ul>' + '<div class="footer">' + '' + '' + '<span class="powered">' + '<span class="logo"></span>' + '</span>' + '</div>' + '</div>' + '<div class="content content2">' + '<div class="title"></div>' + '<div id="score-table">' + '<ul>' + '</ul>' + '</div>' + '' + '<ul class="nav">' + '<li class="back">« 返回</li>' + '<li class="play">再玩一次</li>' + '</ul>' + '<div class="footer">' + '' + '' + '' + '<span class="powered">' + '<span class="logo"></span>' + '</span>' + '</div>' + '</div>' + '</div>' + '</div>' + '<div id="video-message"></div>' + '<div id="container">' + '<div id="sky">' + '<div id="moon">' + '<div id="cloud"></div>' + '<div id="skyline"></div>' + '<div id="city"></div>' + '<div id="snow-b">' + '<div id="snow">' + '<div id="game-over"></div>' + '<div id="santa">' + '<span class="reindeer2"><span></span></span>' + '<span class="reindeer1"><span></span></span>' + '<span class="santa"></span>' + '<span class="santasweet"></span>' + '</div>' + '<div id="cloud-b"></div>' + '</div>' + '</div>' + '</div>' + '</div>' + '<div id="snow-frame"><span class="v">Created by</span></div>' + '<div id="controls">' + '<div id="keys">' + '<div id="up"><span></span></div>' + '<div id="down"><span></span></div>' + '<div id="left"><span></span></div>' + '<div id="right"><span></span></div>' + '</div>' + '<div id="counterText">分数</div>' + '<div id="counter"></div>' + '<div id="music"><span></span></div>' + '<div id="spacebar">空格键</div>' + '</div>' + '<div id="imagelist"><img src="img/house5b.png" /><img src="img/house5.png" /><img src="img/house4.png" /><img src="img/house3.png" /><img src="img/house2.png" /><img src="img/house1.png" /><img src="img/gift1.png" /><img src="img/gift2.png" /><img src="img/gift3.png" /><img src="img/gift4.png" /><img src="img/gift5.png" /><img src="img/enemy1.png" /><img src="img/enemy2.png" /><img src="img/enemy3.png" /><img src="img/enemy4.png" /><img src="img/santa1.png" /><img src="img/santa2.png" /><img src="img/santa3.png" /><img src="img/loading.gif" /><img src="img/logolight-b.png" /><img src="img/logolight.png" /></div>' + '</div>'
     $(pageContent).appendTo('body');
 });
 
@@ -3843,42 +3843,42 @@ function fbToken() {
 function lightboxOn(x) {
     $('#snow-frame span').removeClass('v');
     if ($('#score-table ul li').length == 0) {
-//        $.ajax({
-//            beforeSend: function () {
-//                $('#score-table').addClass('loading');
-//            },
-//            complete: function () {
-//                $('#score-table').removeClass('loading');
-//            },
-//            type: "post",
-//            url: base + '?scores',
-//            async: true,
-//            dataType: "json",
-//            success: function (json) {
-//                jsonScores = json;
-//                var k = 0;
-//                var out = '';
-//                $.each(jsonScores, function (key, val) {
-//                    out += '<li data-id="' + val.id + '"';
-//                    if (fbId == val.id) {
-//                        out += ' id="score-active"';
-//                        maxScore = val.score * 1;
-//                    }
-//                    out += '><b>' + (++k) + '</b><img class="avatar" src="https://graph.facebook.com/' + val.id + '/picture" /><em>' + val.name + '</em><span>' + val.score + '</span></li>';
-//                });
-//                $('#score-table ul').append(out);
-//                if ($('#score-active').length > 0) {
-//                    $('#score-table').animate({
-//                        scrollTop: $('#score-active').index('#score-table ul li') * 60
-//                    }, 150);
-//                }
-//            },
-//            error: function () {
-//                jsonScores = [{
-//                    "id": 0
-//                }];
-//            }
-//        });
+        $.ajax({
+            beforeSend: function () {
+                $('#score-table').addClass('loading');
+            },
+            complete: function () {
+                $('#score-table').removeClass('loading');
+            },
+            type: "post",
+            url: base + '?scores',
+            async: true,
+            dataType: "json",
+            success: function (json) {
+                jsonScores = json;
+                var k = 0;
+                var out = '';
+                $.each(jsonScores, function (key, val) {
+                    out += '<li data-id="' + val.id + '"';
+                    if (fbId == val.id) {
+                        out += ' id="score-active"';
+                        maxScore = val.score * 1;
+                    }
+                    out += '><b>' + (++k) + '</b><img class="avatar" src="https://graph.facebook.com/' + val.id + '/picture" /><em>' + val.name + '</em><span>' + val.score + '</span></li>';
+                });
+                $('#score-table ul').append(out);
+                if ($('#score-active').length > 0) {
+                    $('#score-table').animate({
+                        scrollTop: $('#score-active').index('#score-table ul li') * 60
+                    }, 150);
+                }
+            },
+            error: function () {
+                jsonScores = [{
+                    "id": 0
+                }];
+            }
+        });
     }
     $('#lightboxBG').fadeIn(500);
     $('#score-table').removeClass('big');
@@ -3968,11 +3968,11 @@ function lightboxOn(x) {
         complete: function () {
             if ($('#lightbox .content1 .title').text() == '') {
                 $('#lightbox .content1 .title').shuffleLetters({
-                    "text": 'Santa Drop'
+                    "text": '圣诞老人发礼物'
                 });
                 setTimeout(function () {
                     $('#lightbox #instructions').shuffleLetters({
-                        "text": 'Drop the presents on the buildings'
+                        "text": '把礼物扔到建筑物上'
                     });
                 }, 500);
             }
@@ -4193,7 +4193,7 @@ function enemyCheck(id) {
                     $('.enemy').remove();
                 })
                 $('#game-over').shuffleLetters({
-                    "text": 'Game Over'
+                    "text": '游戏结束'
                 });
                 if (!isiPhone) {
                     if (music != false && soundCookie != false) {
@@ -4436,7 +4436,7 @@ $(document).ready(function () {
                 }
                 if ($('#lightbox .content2 .title').text() != 'High Scores') {
                     $('#lightbox .content2 .title').shuffleLetters({
-                        "text": 'High Scores'
+                        "text": '新纪录'
                     });
                 }
             }
@@ -4452,9 +4452,9 @@ $(document).ready(function () {
             complete: function () {}
         });
     });
-    $('#video-message').html(message1 + '.<br>Please, resize your screen');
+    $('#video-message').html(message1 + '.<br>请调整您的屏幕大小');
     if (isiPhone) {
-        $('#video-message').html(message1 + '.<br>Please, try to rotate your device');
+        $('#video-message').html(message1 + '.<br>请尝试旋转您的设备');
     }
     $('#cssda a, .button').attr('target', '_blank');
     resizeContainer(false);
